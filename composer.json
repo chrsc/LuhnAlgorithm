@@ -1,5 +1,5 @@
 {
-    "name": "chrsc/LuhnAlgorithm",
+    "name": "chrsc/luhn-algorithm",
     "description": "Validate and create credit/bank/loyalty card numbers",
     "license": "MIT",
     "keywords": ["luhn", "creditcard", "bankcard", "validatation"],
