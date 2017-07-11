@@ -1,0 +1,21 @@
+{
+    "name": "chrsc/LuhnAlgorithm",
+    "description": "Validate and create credit/bank/loyalty card numbers",
+    "license": "MIT",
+    "keywords": ["luhn", "creditcard", "bankcard", "validatation"],
+    "authors": [
+        {
+            "name": "Chris Callender",
+            "email": "chrsc@mac.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "chrsc\\LuhnAlgorithm\\": "src"
+        }
+    }
+}
