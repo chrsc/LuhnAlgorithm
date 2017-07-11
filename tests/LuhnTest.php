@@ -19,4 +19,12 @@ class LuhnTest extends PHPUnit_Framework_TestCase {
     $this->assertFalse($luhn->validate(6046460470333788));
   }
 
+  /**
+  *  @test
+  */
+  public function testLuhnCanCreateValidNumber() {
+    $luhn = new LuhnAlgorithm;
+    $number = $luhn->create(16, 604646);
+    $this->assertTrue($luhn->validate($number));
+  }
 }

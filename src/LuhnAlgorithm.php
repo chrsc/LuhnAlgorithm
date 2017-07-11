@@ -10,12 +10,13 @@ class LuhnAlgorithm {
 		// echo "created Luhn\n";
 	}
 
-	public function create($length=16, $startswith='604646') {
+	public function create($length=16, $startswith=604646) {
 		// keep the numbers from ever being duplicated
 		$startdigits = $startswith;
-		// next four represent time of day in mmss
-		for( $i=1; $i < ($length-strlen($startswith)-4); $i++ ) {
-			$middledigits = rand(1,9);
+		// add digits in the middle to fill the card number
+		$middledigits = '';
+		for( $i=0; $i < ($length-strlen($startswith)-4); $i++ ) {
+			$middledigits .= rand(1,9);
 		}
 		// then add a random 4 digits if not in session already;
 		$lastdigits = rand(1000, 9999);
