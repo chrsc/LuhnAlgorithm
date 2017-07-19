@@ -1,0 +1,10 @@
+{
+  "name": "chrsc/luhn-algorithm",
+  "version": "1.0.0",
+  "description": "Validate and create credit/bank/loyalty card numbers",
+  "author": "Chris Callender",
+  "repository": {
+    "url": "https://github.com/chrsc/LuhnAlgorithm",
+    "type": "git"
+  }
+}
