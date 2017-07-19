@@ -33,7 +33,7 @@ class LuhnAlgorithm {
 		$this->orig = $numbers;
 		$numbers = $this->to_array($numbers);
 		$this->sort_odd_even($numbers);
-		$this->create_checksum($numbers);
+		$this->create_checksum();
 		return $this->is_valid();
 	}
 
@@ -41,7 +41,7 @@ class LuhnAlgorithm {
 		return ($this->checksum % 10 == 0);
 	}
 
-	protected function create_checksum($numbers) {
+	protected function create_checksum() {
 		$this->checksum = array_sum($this->even);
 		foreach($this->odd as $odd) {
 			$odd = $this->to_array($odd*2);
